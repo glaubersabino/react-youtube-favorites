@@ -37,7 +37,7 @@ export default class Feed extends Component {
                         <div className="feed_videos">
                             {videos[index].map(video => (
                                 <div className="video_content" key={video.link}>
-                                    <a href={video.link} target="_blank">
+                                    <a href={video.link} target="_blank" rel="noopener">
                                         <img src={video.thumbnail.replace('hqdefault.jpg', 'mqdefault.jpg')} alt={video.title} />
                                         <div className="feed_info">
                                             <p>{video.author}</p>
