@@ -1,0 +1,56 @@
+.feeds{
+    margin: 50px 0;
+    place-content: center;
+}
+
+.feed{
+    display: flex;
+    flex-direction: column;
+}
+
+.feed h1{
+    margin-bottom: 10px;
+}
+
+.feed + .feed{
+    margin-top: 20px;
+}
+
+.feed .feed_videos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.video_content{
+    background: #f5f6fa;
+    max-width: 320px;
+    height: 347px;
+    max-height: 347px;
+    border-radius: 2px;
+}
+
+.video_content a{
+    color: #353b48;
+    text-decoration: none;
+}
+
+.video_content a img{
+    transition: all ease 0.2s;
+}
+
+.video_content a:hover img{
+    opacity: 0.7;
+}
+
+.video_content h1{
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.video_content .feed_info{
+    padding: 5px 10px;
+}
+
+.video_content + .video_content{
+    margin-left: 20px;
+}
